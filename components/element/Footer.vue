@@ -4,31 +4,31 @@ const footerLinks = [
         id: 1,
         title: "Para Pacientes",
         items: [
-            { id: 1, label: 'Criar Perfil', link: '/criar-perfil' },
-            { id: 2, label: 'Agendar Consulta', link: '/agendar-consulta' },
-            { id: 3, label: 'Encontrar Profissionais', link: '/buscar-profissionais' },
-            { id: 4, label: 'Meus Agendamentos', link: '/meus-agendamentos' },
-            { id: 5, label: 'Avaliações', link: '/avaliacoes' },
+            { id: 1, label: 'Criar Perfil', link: '/' },
+            { id: 2, label: 'Agendar Consulta', link: '/' },
+            { id: 3, label: 'Encontrar Profissionais', link: '/' },
+            { id: 4, label: 'Meus Agendamentos', link: '/' },
+            { id: 5, label: 'Avaliações', link: '/' },
         ]
     },
     {
         id: 2,
         title: "Para Profissionais",
         items: [
-            { id: 1, label: 'Criar Perfil', link: '/criar-perfil' },
-            { id: 2, label: 'Gerenciar Agenda', link: '/gerenciar-agenda' },
-            { id: 3, label: 'Consultas Agendadas', link: '/consultas-agendadas' },
-            { id: 4, label: 'Pagamentos', link: '/pagamentos' },
+            { id: 1, label: 'Criar Perfil', link: '/' },
+            { id: 2, label: 'Gerenciar Agenda', link: '/' },
+            { id: 3, label: 'Consultas Agendadas', link: '/' },
+            { id: 4, label: 'Pagamentos', link: '/' },
         ]
     },
     {
         id: 3,
         title: "Sobre Nós",
         items: [
-            { id: 1, label: 'Quem Somos', link: '/quem-somos' },
-            { id: 2, label: 'Como Funciona', link: '/como-funciona' },
-            { id: 3, label: 'Termos de Uso', link: '/termos-de-uso' },
-            { id: 4, label: 'Política de Privacidade', link: '/privacidade' },
+            { id: 1, label: 'Quem Somos', link: '/' },
+            { id: 2, label: 'Como Funciona', link: '/' },
+            { id: 3, label: 'Termos de Uso', link: '/' },
+            { id: 4, label: 'Política de Privacidade', link: '/' },
         ]
     }
 ]
@@ -103,16 +103,16 @@ const footerLinks = [
                     <p> &copy; 2024 ConsultMatch. Todos os direitos reservados. </p>
                 </div>
                 <div class="flex justify-center sm-justify-end w-full gap-3">
-                    <nuxt-link to="#" aria-label="social link">
+                    <nuxt-link to="/" aria-label="social link">
                         <span i-carbon-logo-facebook text-2xl flex></span>
                     </nuxt-link>
-                    <nuxt-link to="#" aria-label="social link">
+                    <nuxt-link to="/" aria-label="social link">
                         <span i-carbon-logo-linkedin text-2xl flex></span>
                     </nuxt-link>
-                    <nuxt-link to="#" aria-label="social link">
+                    <nuxt-link to="/" aria-label="social link">
                         <span i-carbon-logo-twitter text-2xl flex></span>
                     </nuxt-link>
-                    <nuxt-link to="#" aria-label="social link">
+                    <nuxt-link to="/" aria-label="social link">
                         <span i-carbon-logo-instagram text-2xl flex></span>
                     </nuxt-link>
                 </div>
