@@ -8,6 +8,12 @@ pages:
     - npm run generate
     - echo 'Preparing public directory'
     - mv .output/public public
+    - echo 'Contents of public directory:'
+    - ls -R public
+    - echo 'Size of public directory:'
+    - du -sh public
+    - echo 'Checking for index.html:'
+    - test -f public/index.html && echo "index.html exists" || echo "index.html not found"
   artifacts:
     paths:
       - public
