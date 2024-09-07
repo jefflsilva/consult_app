@@ -1,0 +1,15 @@
+pages:
+  stage: deploy
+  image: node:latest
+  script:
+    - echo 'Installing dependencies'
+    - npm ci
+    - echo 'Building Nuxt app'
+    - npm run generate
+    - echo 'Preparing public directory'
+    - mv .output/public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
