@@ -3,10 +3,10 @@ import CustomButton from '../ui/CustomButton.vue';
 </script>
 
 <template>
-    <section class="relative pt-32 lg:pt-36">
-        <div class="px-5 sm:px-10 md:px-12 lg:px-5 mx-auto max-w-md w-full">
+    <section class="relative flex items-center justify-center min-h-screen py-12 px-4">
+        <div class="w-full max-w-lg bg-white dark:bg-neutral-9 p-8 rounded-2xl shadow-lg">
             <h2 class="text-3xl font-bold text-center text-neutral-8 dark:text-white mb-8">
-                Faça login em sua conta
+                Bem-vindo de volta
             </h2>
 
             <div class="space-y-4">
@@ -37,7 +37,7 @@ import CustomButton from '../ui/CustomButton.vue';
                         <input type="password" placeholder="Senha"
                             class="w-full py-3 px-4 rounded-full bg-neutral-1 dark:bg-neutral-8 text-neutral-8 dark:text-white border border-neutral-2 dark:border-neutral-7 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600 focus:outline-none transition-colors" />
                     </div>
-                    <CustomButton label="Entrar" class="w-full"></CustomButton>
+                    <CustomButton label="Entrar" class="w-full" isFullWidth></CustomButton>
                 </form>
 
                 <div class="text-center">
@@ -51,3 +51,9 @@ import CustomButton from '../ui/CustomButton.vue';
         </div>
     </section>
 </template>
+
+<style scoped>
+.min-h-screen {
+    min-height: 100vh;
+}
+</style>
