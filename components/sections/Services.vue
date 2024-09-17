@@ -1,5 +1,5 @@
 <template>
-    <section py-20>
+    <section py-20 id="servicos">
         <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto flex flex-col items-start gap-10 xl-gap-14">
             <div class="text-center max-w-3xl mx-auto space-y-4">
                 <h1 text="4xl neutral-9 dark:white" class="font-semibold">

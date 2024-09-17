@@ -1,5 +1,5 @@
 <template>
-    <section class="py24">
+    <section class="py24" id="about">
         <div class="max-w-7xl mx-auto px-5 sm-px-10 md-px-12 lg-px-5 flex flex-col md-flex-row gap16">
             <div class="flex md-flex-1">
                 <img src="/images/customer-experience-creative-collage.jpg" alt="comunicação médico-paciente"

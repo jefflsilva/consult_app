@@ -1,5 +1,5 @@
 <template>
-    <header absolute inset-x-0 top-0 z50 py6>
+    <header :class="navIsOpen ? 'bg-neutral-9/80' : 'bg-white dark:bg-neutral-950'" fixed inset-x-0 top-0 z50 py4>
         <div w-full px="5 sm:10 md:12 lg:5" mx-auto max-w-7xl>
             <nav w-full flex justify-between gap-6 relative>
                 <div min-w-max inline-flex relative>
@@ -28,25 +28,26 @@
                     <ul px="6 lg:0" pt="6 lg:0" flex flex-col lg-flex-row gap-y-4 gap-x-3
                         text="lg neutral-7 dark:neutral-3" w-full lg-justify-center lg-items-center>
                         <li v-for="navItem in navItems" :key="navItem.id">
-                            <nuxt-link to="#" duration-300 font-medium ease-linear hover-text-emerald-6 py3>
+                            <nuxt-link :to="navItem.href" @click.prevent="closeNavBar(); smoothScroll(navItem.href)"
+                                duration-300 font-medium ease-linear hover-text-emerald-6 py3>
                                 {{ navItem.text }}
                             </nuxt-link>
                         </li>
                     </ul>
 
                     <div lg-min-w-max flex items-center sm-w-max w-full pb="6 lg:0" px="6 lg:0">
-                        <nuxt-link to="#" flex justify-center items-center w-full sm-w-max px6 h12 bg-emerald-600
-                            rd-full relative overflow-hidden border="~ transparent hover:[emerald7]" duration-300
-                            ease-linear
+                        <nuxt-link @click="closeNavBar();" to="/cadastro" flex justify-center items-center w-full
+                            sm-w-max px6 h12 bg-emerald-600 rd-full relative overflow-hidden
+                            border="~ transparent hover:[emerald7]" duration-300 ease-linear
                             un-after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[emerald7]">
                             <span relative z-10 text-white>
                                 Cadastrar
                             </span>
                         </nuxt-link>
 
-                        <!-- New Login Button -->
-                        <nuxt-link to="/login" flex justify-center items-center w-full sm-w-max px6 h12 ml-3 rd-full
-                            relative overflow-hidden border="~ emerald-600 hover:[emerald7]" duration-300 ease-linear
+                        <nuxt-link @click="closeNavBar();" to="/login" flex justify-center items-center w-full sm-w-max
+                            px6 h12 ml-3 rd-full relative overflow-hidden border="~ emerald-600 hover:[emerald7]"
+                            duration-300 ease-linear
                             un-after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[emerald7]">
                             <span relative z-10 text-emerald-600 hover:text-emerald-700>
                                 Entrar
@@ -83,12 +84,12 @@ const navItems = [
     {
         id: 2,
         text: "Serviços",
-        href: "/",
+        href: "#servicos",
     },
     {
         id: 3,
         text: "Sobre nós",
-        href: "/",
+        href: "#about",
     },
     {
         id: 4,
@@ -104,5 +105,12 @@ function toggleNavBar() {
 function closeNavBar() {
     navIsOpen.value = false
     ocument.body.classList.add("overflow-y-auto")
+}
+
+function smoothScroll(target) {
+    const element = document.querySelector(target);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 </script>
