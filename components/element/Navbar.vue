@@ -45,8 +45,8 @@
                         </nuxt-link>
 
                         <!-- New Login Button -->
-                        <nuxt-link to="#" flex justify-center items-center w-full sm-w-max px6 h12 ml-3 rd-full relative
-                            overflow-hidden border="~ emerald-600 hover:[emerald7]" duration-300 ease-linear
+                        <nuxt-link to="/login" flex justify-center items-center w-full sm-w-max px6 h12 ml-3 rd-full
+                            relative overflow-hidden border="~ emerald-600 hover:[emerald7]" duration-300 ease-linear
                             un-after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[emerald7]">
                             <span relative z-10 text-emerald-600 hover:text-emerald-700>
                                 Entrar
