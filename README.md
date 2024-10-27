@@ -31,7 +31,7 @@ Este é um aplicativo de agendamento de consultas online, desenvolvido para cone
 - **Vue Router**: Gerenciamento de navegação e rotas.
 - **Axios**: Integração com a API para envio de requisições HTTP.
 
-### Backend (Sugestão)
+### Backend 
 - **Node.js** com **Express**: Para criação da API RESTful e integração com banco de dados.
 - **JWT**: Autenticação segura de usuários.
 - **Banco de Dados**: MongoDB ou PostgreSQL para gerenciamento de informações dos perfis, agendamentos e avaliações.
