@@ -2,6 +2,8 @@
 
 Este é um aplicativo de agendamento de consultas online, desenvolvido para conectar profissionais de saúde com pacientes de forma prática e intuitiva. O sistema permite a criação de perfis para profissionais e pacientes, agendamentos personalizados, sincronização de horários, preferências de consulta e avaliações pós-consulta, além de envio de confirmações por e-mail.
 
+> **Nota**: Este repositório contém apenas o código do frontend. Para o código do backend, acesse o repositório [Consult App Server](https://github.com/jefflsilva/consult_app_server).
+
 ## 📋 Funcionalidades
 
 ### Usuário Paciente
@@ -31,7 +33,7 @@ Este é um aplicativo de agendamento de consultas online, desenvolvido para cone
 - **Vue Router**: Gerenciamento de navegação e rotas.
 - **Axios**: Integração com a API para envio de requisições HTTP.
 
-### Backend 
+### Backend
 - **Node.js** com **Express**: Para criação da API RESTful e integração com banco de dados.
 - **JWT**: Autenticação segura de usuários.
 - **Banco de Dados**: MongoDB ou PostgreSQL para gerenciamento de informações dos perfis, agendamentos e avaliações.
@@ -39,7 +41,3 @@ Este é um aplicativo de agendamento de consultas online, desenvolvido para cone
 
 ### Outros Serviços
 - **Envio de E-mails**: AWS SES ou Nodemailer para envio de notificações e confirmações.
-  
----
-
-
