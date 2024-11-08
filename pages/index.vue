@@ -12,7 +12,6 @@
 </template>
 
 <script lang="ts" setup>
-import Carousel from '~/components/sections/carousel.vue';
 import LastRegistrations from '~/components/sections/LastRegistrations.vue';
 useHead({
   title: 'MediConsulta Online - Atendimento Médico Virtual',

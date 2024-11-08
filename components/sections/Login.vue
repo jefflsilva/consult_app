@@ -1,24 +1,34 @@
 <script setup lang="ts">
 import CustomButton from '../ui/CustomButton.vue';
+
+useHead({
+    title: 'Login - Seu Site',
+    meta: [
+        { name: 'description', content: 'Faça login na sua conta para acessar recursos exclusivos.' },
+        { name: 'keywords', content: 'login, autenticação, conta' },
+        { name: 'robots', content: 'index, follow' }
+    ]
+});
 </script>
 
 <template>
     <section class="relative flex items-center justify-center min-h-screen py-12 px-4">
         <div class="w-full max-w-lg bg-white dark:bg-neutral-9 p-8 rounded-2xl shadow-lg">
-            <h2 class="text-3xl font-bold text-center text-neutral-8 dark:text-white mb-8">
+            <h2 class="text-3xl font-bold text-center text-neutral-8 dark:text-white mb-8"
+                aria-label="Bem-vindo de volta">
                 Bem-vindo de volta
             </h2>
 
             <div class="space-y-4">
-                <button
+                <button aria-label="Continuar com Google"
                     class="w-full py-3 px-4 flex items-center justify-center gap-2 bg-white text-neutral-8 rounded-full border border-neutral-2 hover:bg-neutral-1 transition-colors">
-                    <span class="i-carbon-logo-google text-xl"></span>
+                    <span class="i-carbon-logo-google text-xl" aria-hidden="true"></span>
                     Continuar com Google
                 </button>
 
-                <button
+                <button aria-label="Continuar com LinkedIn"
                     class="w-full py-3 px-4 flex items-center justify-center gap-2 bg-white text-neutral-8 rounded-full border border-neutral-2 hover:bg-neutral-1 transition-colors">
-                    <span class="i-carbon-logo-linkedin text-xl"></span>
+                    <span class="i-carbon-logo-linkedin text-xl" aria-hidden="true"></span>
                     Continuar com LinkedIn
                 </button>
 

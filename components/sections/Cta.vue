@@ -26,6 +26,11 @@
                             pacientes</span>
                         online
                     </h1>
+                    <h2 class="text-xl font-semibold text-neutral-800 dark:text-neutral-200">
+                        Conecte-se com pacientes e construa sua reputação profissional
+                    </h2>
+                    <meta name="description"
+                        content="Conecte-se com pacientes que procuram seu serviço, ofereça atendimento gratuito e construa sua reputação profissional online." />
                     <p text="neutral-7 dark:neutral-3">
                         Conecte-se com pacientes que procuram seu serviço, ofereça atendimento gratuito
                         e construa sua reputação profissional.

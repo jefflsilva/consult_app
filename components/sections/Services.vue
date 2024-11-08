@@ -2,21 +2,22 @@
     <section py-20 id="servicos">
         <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto flex flex-col items-start gap-10 xl-gap-14">
             <div class="text-center max-w-3xl mx-auto space-y-4">
-                <h1 text="4xl neutral-9 dark:white" class="font-semibold">
+                <h1 text="4xl neutral-9 dark:white" class="font-semibold" aria-label="Nossos serviços">
                     Nossos serviços
                 </h1>
-                <p text="neutral-7 dark:neutral-3">
+                <p text="neutral-7 dark:neutral-3" aria-label="Descrição dos serviços">
                     Facilitamos o agendamento de consultas e a conexão entre pacientes e profissionais de saúde.
                 </p>
             </div>
             <div class="grid sm-grid-cols-2 lg-grid-cols-3 gap-6 lg-gap-8">
                 <div p="5 sm:6 lg:8" border="~ neutral-2 dark:neutral-8" bg="neutral-1 dark:neutral-9"
-                    class="rd-3xl relative overflow-hidden">
+                    class="rd-3xl relative overflow-hidden" loading="lazy">
                     <div bg="neutral-2 dark:neutral-8" text="neutral-9 dark:white" class="rd-xl p3 w-max relative">
                         <span i-carbon-calendar flex text-2xl></span>
                     </div>
                     <div class="mt6 space-y-4 relative">
-                        <h2 text="lg md:xl neutral-9 dark:neutral-1" class="font-semibold">
+                        <h2 text="lg md:xl neutral-9 dark:neutral-1" class="font-semibold"
+                            aria-label="Agendamento de consultas">
                             Agendamento de consultas
                         </h2>
                         <p text="neutral-7 dark:neutral-3">

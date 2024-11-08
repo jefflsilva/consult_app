@@ -3,15 +3,12 @@
         <div w-full px="5 sm:10 md:12 lg:5" mx-auto max-w-7xl>
             <nav w-full flex justify-between gap-6 relative>
                 <div min-w-max inline-flex relative>
-                    <nuxt-link to="/" relative flex items-center gap-3>
-
-
-                        <svg class="w-6 h-6 text-emerald-600  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 20 20">
+                    <nuxt-link to="/" relative flex items-center gap-3 aria-label="Home">
+                        <svg class="w-6 h-6 text-emerald-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 20" role="img" aria-label="Logo">
                             <path
                                 d="M0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm14-7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm-5-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm-5-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4Z" />
                         </svg>
-
                         <div inline-flex text="lg neutral-8 dark:white" font-semibold>
                             Consult Match
                         </div>
@@ -78,7 +75,7 @@ const navIsOpen = useState('navIsOpen', () => false)
 const navItems = [
     {
         id: 1,
-        text: "Início	",
+        text: "Início",
         href: "/",
     },
     {
@@ -104,7 +101,7 @@ function toggleNavBar() {
 }
 function closeNavBar() {
     navIsOpen.value = false
-    ocument.body.classList.add("overflow-y-auto")
+    document.body.classList.add("overflow-y-auto")
 }
 
 function smoothScroll(target) {

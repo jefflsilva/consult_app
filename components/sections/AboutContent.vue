@@ -2,8 +2,9 @@
     <section class="py24" id="about">
         <div class="max-w-7xl mx-auto px-5 sm-px-10 md-px-12 lg-px-5 flex flex-col md-flex-row gap16">
             <div class="flex md-flex-1">
-                <img src="/images/customer-experience-creative-collage.jpg" alt="comunicação médico-paciente"
-                    width="1300" class="wfull md-hfull object-cover rd-3xl">
+                <img src="/images/customer-experience-creative-collage.jpg"
+                    alt="Colagem criativa sobre comunicação médico-paciente" width="1300"
+                    class="wfull md-hfull object-cover rd-3xl" loading="lazy">
             </div>
             <div class="md-w-1/2 lg-w-54% space-y-12 text-neutral-7 dark-text-neutral-3 md-py8">
                 <h1 class="text-neutral9 dark-text-white font-semibold text-2xl sm-text-3xl md-text-4xl">

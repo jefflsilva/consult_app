@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import CustomButton from '../ui/CustomButton.vue';
-
-
 </script>
 
 <template>
@@ -38,8 +35,9 @@ import CustomButton from '../ui/CustomButton.vue';
             </div>
 
             <div flex flex-1 lg-h-auto relative lg-max-w-none mx-auto max-w-3xl class="lg-w-1/2">
-                <img src="/images/consulta_online.jpg" alt="Hero image" width="2350" height="2359" rd-3xl object-cover
-                    lg="absolute w-full lg-h-full" class="lg-max-h-none max-h-96">
+                <img src="/images/consulta_online.jpg"
+                    alt="Imagem de consulta online com especialistas prontos para ajudar" width="2350" height="2359"
+                    rd-3xl object-cover loading="lazy" lg="absolute w-full lg-h-full" class="lg-max-h-none max-h-96" />
             </div>
         </div>
     </section>

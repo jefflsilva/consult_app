@@ -1,44 +1,42 @@
 <template>
     <section class="py-24">
-        <div class="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
-            <h2 class="text-3xl font-semibold text-neutral-9 dark:text-white mb-8 text-center">
-                Profissionais Recém-Cadastrados
-            </h2>
-            <div class="relative">
-                <div class="overflow-hidden">
-                    <div class="flex transition-transform duration-300 ease-in-out"
-                        :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
-                        <div v-for="professional in recentProfessionals" :key="professional.id"
-                            class="w-full md:w-1/3 flex-shrink-0 px-4">
-                            <div
-                                class="bg-neutral-1 dark:bg-neutral-9 border border-neutral-2 dark:border-neutral-8 rounded-xl p-6 space-y-4 flex flex-col h-full">
-                                <div class="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                                    <img :src="professional.avatar" :alt="professional.name"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <h3 class="text-xl font-semibold text-neutral-9 dark:text-white text-center">{{
-                                    professional.name }}</h3>
-                                <p class="text-neutral-7 dark:text-neutral-3 text-center">{{ professional.specialty }}
-                                </p>
-                                <div class="mt-auto flex justify-center">
-                                    <button @click="goToProfile(professional.id)"
-                                        class="px-6 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors duration-300">
-                                        Ver perfil
-                                    </button>
-                                </div>
+        <h2 class="text-3xl font-semibold text-neutral-9 dark:text-white mb-8 text-center">
+            Profissionais Recém-Cadastrados
+        </h2>
+        <div class="relative">
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-300 ease-in-out"
+                    :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+                    <div v-for="professional in recentProfessionals" :key="professional.id"
+                        class="w-full md:w-1/3 flex-shrink-0 px-4">
+                        <div
+                            class="bg-neutral-1 dark:bg-neutral-9 border border-neutral-2 dark:border-neutral-8 rounded-xl p-6 space-y-4 flex flex-col h-full">
+                            <div class="w-24 h-24 mx-auto overflow-hidden rounded-full">
+                                <img :src="professional.avatar" :alt="`${professional.name}, ${professional.specialty}`"
+                                    loading="lazy" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-semibold text-neutral-9 dark:text-white text-center">{{
+                                professional.name }}</h3>
+                            <p class="text-neutral-7 dark:text-neutral-3 text-center">{{ professional.specialty }}
+                            </p>
+                            <div class="mt-auto flex justify-center">
+                                <button @click="goToProfile(professional.id)"
+                                    class="px-6 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors duration-300">
+                                    Ver perfil
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button @click="prevSlide"
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md flex items-center justify-center">
-                    <span class="i-carbon-chevron-left text-2xl"></span>
-                </button>
-                <button @click="nextSlide"
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md flex items-center justify-center">
-                    <span class="i-carbon-chevron-right text-2xl"></span>
-                </button>
             </div>
+            <button @click="prevSlide"
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md flex items-center justify-center">
+                <span class="i-carbon-chevron-left text-2xl"></span>
+            </button>
+            <button @click="nextSlide"
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md flex items-center justify-center">
+                <span class="i-carbon-chevron-right text-2xl"></span>
+            </button>
         </div>
     </section>
 </template>
