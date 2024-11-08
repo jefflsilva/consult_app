@@ -32,21 +32,24 @@
                         </li>
                     </ul>
 
-                    <div lg-min-w-max flex items-center sm-w-max w-full pb="6 lg:0" px="6 lg:0">
+                    <div lg-min-w-max flex items-center sm-w-max w-full pb="6 lg:0" px="6 lg:0" role="navigation"
+                        aria-label="Navegação principal">
                         <nuxt-link @click="closeNavBar();" to="/cadastro" flex justify-center items-center w-full
-                            sm-w-max px6 h12 bg-emerald-600 rd-full relative overflow-hidden
-                            border="~ transparent hover:[emerald7]" duration-300 ease-linear
-                            un-after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[emerald7]">
+                            sm-w-max px6 h12 bg-emerald-700 rd-full relative overflow-hidden
+                            border="~ transparent hover:bg-emerald-800" duration-300 ease-linear
+                            un-after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[emerald8]"
+                            aria-label="Cadastrar um novo usuário">
                             <span relative z-10 text-white>
                                 Cadastrar
                             </span>
                         </nuxt-link>
 
                         <nuxt-link @click="closeNavBar();" to="/login" flex justify-center items-center w-full sm-w-max
-                            px6 h12 ml-3 rd-full relative overflow-hidden border="~ emerald-600 hover:[emerald7]"
+                            px6 h12 ml-3 rd-full relative overflow-hidden border="~ emerald-700 hover:bg-emerald-800"
                             duration-300 ease-linear
-                            un-after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[emerald7]">
-                            <span relative z-10 text-emerald-600 hover:text-emerald-700>
+                            un-after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[emerald8]"
+                            aria-label="Entrar na conta">
+                            <span relative z-10 text-white hover:text-emerald-200>
                                 Entrar
                             </span>
                         </nuxt-link>

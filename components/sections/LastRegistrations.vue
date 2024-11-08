@@ -21,7 +21,7 @@
                             </p>
                             <div class="mt-auto flex justify-center">
                                 <button @click="goToProfile(professional.id)"
-                                    class="px-6 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors duration-300">
+                                    class="px-6 py-2 bg-emerald-800 text-white rounded-full hover:bg-emerald-700 transition-colors duration-300">
                                     Ver perfil
                                 </button>
                             </div>
@@ -29,11 +29,11 @@
                     </div>
                 </div>
             </div>
-            <button @click="prevSlide"
+            <button @click="prevSlide" aria-label="próximo slide"
                 class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md flex items-center justify-center">
                 <span class="i-carbon-chevron-left text-2xl"></span>
             </button>
-            <button @click="nextSlide"
+            <button @click="nextSlide" aria-label="slide anterior"
                 class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md flex items-center justify-center">
                 <span class="i-carbon-chevron-right text-2xl"></span>
             </button>
