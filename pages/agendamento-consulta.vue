@@ -31,9 +31,8 @@ useHead({
             </div>
 
             <div class="lg-w-1/2">
-                <img src="/consult_app/_nuxt/images/consult.jpg"
-                    alt="Imagem de agendamento de consulta com especialista" width="2350" height="2359"
-                    srcset="/consult_app/_nuxt/images/consult.jpg 2350w"
+                <img src="/images/consult.jpg" alt="Imagem de agendamento de consulta com especialista" width="2350"
+                    height="2359" srcset="/consult_app/_nuxt/images/consult.jpg 2350w"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 2350px" rd-3xl object-cover
                     loading="lazy" class="lg-max-h-none max-h-96" />
             </div>
