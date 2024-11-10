@@ -5,6 +5,9 @@ export default defineNuxtConfig({
       lang: 'pt'
     }
   },
+  app: {
+    baseURL: '/consult_app/',
+  },
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
