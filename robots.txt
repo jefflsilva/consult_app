@@ -1,8 +1,5 @@
-# START YOAST BLOCK
-# ---------------------------
+# START nuxt-robots (indexable)
 User-agent: *
-Disallow:
+Disallow: 
 
-Sitemap: https://jefflsilva.github.io/consult_app/sitemap_index.xml
-# ---------------------------
-# END YOAST BLOCK
+# END nuxt-robots
