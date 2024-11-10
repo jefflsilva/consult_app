@@ -1,5 +1,6 @@
 # START nuxt-robots (indexable)
 User-agent: *
+Allow: /
 Disallow: 
 
 # END nuxt-robots
