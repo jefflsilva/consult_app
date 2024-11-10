@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     sources: [
-      '/server/api/__sitemap__/urls',
+      '/api/__sitemap__/urls',
     ]
   }
 })
