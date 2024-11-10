@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
   $meta: {
@@ -12,7 +11,9 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap'
   ],
   colorMode: {
     preference: 'system',
@@ -21,4 +22,17 @@ export default defineNuxtConfig({
     classSuffix: '',
     storageKey: 'app-theme'
   },
+  robots: {
+    disallow: '',
+    allow: '/',
+  },
+  site: {
+    url: 'https://jefflsilva.github.io/',
+    name: 'Consult Match - Plataforma de agendamento de consultas'
+  },
+  sitemap: {
+    sources: [
+      '/api/__sitemap__/urls',
+    ]
+  }
 })
