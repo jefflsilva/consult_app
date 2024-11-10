@@ -3,4 +3,5 @@ User-agent: *
 Allow: /
 Disallow: 
 
+Sitemap: https://jefflsilva.github.io/consult_app/sitemap.xml
 # END nuxt-robots
