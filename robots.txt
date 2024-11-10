@@ -1,7 +1,0 @@
-# START nuxt-robots (indexable)
-User-agent: *
-Allow: /
-Disallow: 
-
-Sitemap: https://jefflsilva.github.io/sitemap.xml
-# END nuxt-robots
