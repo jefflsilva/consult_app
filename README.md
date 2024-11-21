@@ -7,7 +7,7 @@ Este é um aplicativo de agendamento de consultas online, desenvolvido para cone
 
 ## Deploy
 
-O projeto está hospedado no GitHub Pages e pode ser acessado através do seguinte link:
+Projeto ainda em desenvolvimento e hospedado no GitHub Pages e pode ser acessado através do seguinte link:
 
 [Consult App DEMO](https://jefflsilva.github.io/consult_app/)
 
