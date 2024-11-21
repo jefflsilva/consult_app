@@ -1,13 +1,13 @@
 # 🩺 Aplicativo de Agendamentos de Consultas Online, desenvolvido com Nuxt.js e Vue.
 
-Este é um aplicativo de agendamento de consultas online, desenvolvido para conectar profissionais de saúde com pacientes de forma prática e intuitiva. O sistema permite a criação de perfis para profissionais e pacientes, agendamentos personalizados, sincronização de horários, preferências de consulta e avaliações pós-consulta, além de envio de confirmações por e-mail.
+Este é um aplicativo (em desenvolvimento) de agendamento de consultas online, desenvolvido para conectar profissionais de saúde com pacientes de forma prática e intuitiva. O sistema permite a criação de perfis para profissionais e pacientes, agendamentos personalizados, sincronização de horários, preferências de consulta e avaliações pós-consulta, além de envio de confirmações por e-mail.
 
 **Nota**: Este repositório contém apenas o código do frontend. Para o código do backend, acesse o repositório [Consult App Server](https://github.com/jefflsilva/consult_app_server).
 
 
 ## Deploy
 
-Projeto ainda em desenvolvimento e hospedado no GitHub Pages e pode ser acessado através do seguinte link:
+O Projeto está hospedado no GitHub Pages e pode ser acessado através do seguinte link:
 
 [Consult App DEMO](https://jefflsilva.github.io/consult_app/)
 
